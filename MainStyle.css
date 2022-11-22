@@ -66,13 +66,13 @@ li .short{
 
 
 .title-word {
-    animation: color-animation 4s linear infinite;
+    animation: color-animation 2s linear infinite;
 }
 
 .title-word-1 {
     --color-1: #ffffff;
     --color-2: #04ffda;
-    --color-3: #13e00b;
+    --color-3: #25f10c;
 }
 
 .title-word-2 {
@@ -176,19 +176,14 @@ li .short{
     text-align:center;
 }
 
-@media (max-width:991px) {
-    .footer-dark .item.social {
-        text-align:center;
-        margin-top:20px;
-    }
-}
+
 
 .footer-dark .item.social > a {
     font-size:20px;
     width:36px;
     height:36px;
     line-height:36px;
-    display:inline-block;
+
     text-align:center;
     border-radius:50%;
     box-shadow:0 0 0 1px rgba(255,255,255,0.4);
