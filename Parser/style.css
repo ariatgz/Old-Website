@@ -1,0 +1,69 @@
+pp-output{
+    display: block;
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: #0a68b6;
+}
+
+pp-comment{
+    color: #888;
+}
+
+pp-comment:before{
+    content: "<!--";
+}
+
+
+pp-comment:after{
+    content: "-->";
+}
+pp-tagname{
+    color: orange;
+}
+
+pp-opentag:before{
+    content: "<";
+}
+pp-closetag:before{
+    content: "</";
+}
+
+pp-opentag:after, pp-closetag:after{
+    content: ">";
+}
+
+pp-attrname{
+
+    color: brown;
+}
+pp-attrname:before{
+    content: "  ";
+}
+pp-attrname:after{
+    content: "='";
+}
+
+pp-attrvalue:after{
+    content: "' ";
+}
+pp-text{
+    color: black;
+}
+
+pp-tagnamevoid{
+
+    color: orange;
+}
+
+pp-tagnamevoid:after{
+    color: #0a68b6;
+    content: "/>";
+}
+pp-tagnamevoid:before{
+    color: #0a68b6;
+    content: "<";
+}
+
+
+
+

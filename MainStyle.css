@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+#IntroVid{
+
+    width: auto;
+    height: 500px;
+
+    animation-name: onLoad;
+    animation-duration: 4s;
+
+
+
+}
+
+.footsec{
+    font-size: 1.5rem;
+    color: white;
+    padding: 25%;
+}
+
+
+#ove {
+    clip-path: polygon(25% 100%, 75% 100%, 100% 0, 0 0);
+}
+
+@media screen and (max-width: 767px) {
+
+    #IntroVid{
+
+        width: 100vw;
+        height: auto;
+        outline: none;
+
+
+
+
+    }
+    #ove {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+
+
+}
+@keyframes onLoad {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+
+li{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 5%;
+}
+
+li .short{
+    margin-top: 1%;
+}
+
+
+
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #ffffff;
+    --color-2: #04ffda;
+    --color-3: #13e00b;
+}
+
+.title-word-2 {
+    --color-1: #000000;
+    --color-2: #ffffff;
+    --color-3: #17494D;
+}
+
+.title-word-3 {
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+    --color-1: #ffffff;
+    --color-2: #500000;
+    --color-3: #013a05;
+}
+
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+
+/* Here are just some visual styles. 🖌 */
+
+.container {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 80vh
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 90px;
+    font-weight: bold;
+
+}
+.footer-dark {
+    padding:50px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+}
+
+.footer-dark h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+}
+
+.footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+    opacity:0.8;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align:center;
+        padding-bottom:20px;
+    }
+}
+
+.footer-dark .item.text {
+    margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+    .footer-dark .item.text {
+        margin-bottom:0;
+    }
+}
+
+.footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+}
+
+.footer-dark .item.social {
+    text-align:center;
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align:center;
+        margin-top:20px;
+    }
+}
+
+.footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+    opacity:0.9;
+}
+
+.footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+}
