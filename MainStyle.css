@@ -20,7 +20,7 @@ html {
     clip-path: polygon(25% 100%, 75% 100%, 100% 0, 0 0);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
 
     #IntroVid{
 
