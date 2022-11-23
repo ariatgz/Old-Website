@@ -2,8 +2,11 @@
 
 
 
-*{
-
+body,
+html {
+    overflow-x:hidden;
+    margin: 0;
+    width: 100vw;
 }
 
 .footsec{
