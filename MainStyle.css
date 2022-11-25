@@ -7,6 +7,7 @@ html {
     overflow-x:hidden;
     margin: 0;
     width: 100vw;
+    background-color: white;
 }
 
 .footsec{
@@ -17,45 +18,8 @@ html {
 
 
 #ove {
+
     clip-path: polygon(25% 100%, 75% 100%, 100% 0, 0 0);
-}
-
-@media screen and (max-width: 1024px) {
-
-    #IntroVid{
-
-        width: 100vw;
-        height: auto;
-        outline: none;
-
-
-
-
-    }
-    #ove {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    li{
-        color: white;
-        font-size: 1rem;
-        margin-top: 5%;
-    }
-
-
-
-
-
-
-}
-@keyframes onLoad {
-    from {
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-
 }
 
 li{
@@ -63,6 +27,24 @@ li{
     font-size: 1.4rem;
     margin-top: 5%;
 }
+
+@media screen and (max-width: 1024px) {
+
+
+    #ove {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    li{
+        color: white;
+        font-size: 1.1rem;
+        margin-top: 5%;
+    }
+
+
+}
+
+
+
 
 li .short{
     margin-top: 1%;
@@ -108,7 +90,7 @@ li .short{
     100%  {color: var(--color-1)}
 }
 
-/* Here are just some visual styles. 🖌 */
+
 
 .container {
     display: grid;
@@ -124,6 +106,7 @@ li .short{
     font-weight: bold;
 
 }
+
 .footer-dark {
     padding:50px 0;
     color:#f0f9ff;
